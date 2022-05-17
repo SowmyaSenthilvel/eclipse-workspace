@@ -1,0 +1,24 @@
+
+public class StringObj {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringObj s=new StringObj();
+		String[] names= {"Ramya","Preethi","Sahana"};
+		s.joinWords(names);
+
+	}
+	public void joinWords(String[] names) {
+		String str="";
+		StringBuffer sd=new StringBuffer();
+		for(String name:names) {
+			str=str+" "+st;
+			sd.append(name);
+			
+		}
+		System.out.println(sd);
+		System.out.println(str);
+		
+	}
+
+}

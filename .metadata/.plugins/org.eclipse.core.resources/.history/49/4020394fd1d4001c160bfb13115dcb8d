@@ -1,0 +1,16 @@
+
+public class StringBufferMethod {
+	enum Fruits{
+		Orange,Apple,Grapes,Muskmelon;
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Fruits.Orange.name());
+		System.out.println(Fruits.Apple.name());
+		System.out.println(Fruits.Grapes.name());
+
+	}
+
+}

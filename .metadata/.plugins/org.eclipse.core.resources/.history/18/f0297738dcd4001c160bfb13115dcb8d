@@ -1,0 +1,12 @@
+
+public class StringBuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="The Monkey";
+		String s2="Very Beautiful";
+		System.out.println(new StringBuilder(s1).append(s2));
+
+	}
+
+}

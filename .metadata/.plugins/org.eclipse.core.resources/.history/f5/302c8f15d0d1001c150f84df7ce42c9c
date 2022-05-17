@@ -1,0 +1,12 @@
+import java.util.*;
+public class ArrayListDemo {
+	public static void main(String[] args) {
+	ArrayList<Integer> alist=new ArrayList<Integer>();
+	alist.add(8);
+	alist.add(100);
+	alist.add(12);
+	System.out.println(alist);
+	alist.remove(3);
+	}
+	
+}

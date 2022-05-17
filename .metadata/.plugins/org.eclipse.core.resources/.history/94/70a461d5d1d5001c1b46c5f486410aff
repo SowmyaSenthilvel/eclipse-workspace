@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class BinaryToDecimal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		String n=input.next();
+		System.out.println("Decimal to Binary"+ Integer.parseInt(n, 2));
+			
+		}
+
+	}
+
+}
