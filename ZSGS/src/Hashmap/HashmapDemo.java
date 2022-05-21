@@ -3,6 +3,7 @@ package Hashmap;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Set;
 
 public class HashmapDemo {
@@ -23,7 +24,6 @@ public class HashmapDemo {
 		//Prints the entries
 		Set entryset=map.entrySet();
 		System.out.println("Entry are"+entryset);
-		
 
 	}
 
