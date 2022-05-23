@@ -1,4 +1,5 @@
 package ProgramsOnArrayList;
+
 public class StudentDetails{
 	private int RegNo;
 	private String Name;

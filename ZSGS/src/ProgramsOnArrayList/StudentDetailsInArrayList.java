@@ -6,34 +6,51 @@ public class StudentDetailsInArrayList {
 
 	public static void main(String[] args) {
 		Scanner input=new Scanner(System.in);
-		ArrayList<StudentDetails> student=new ArrayList<StudentDetails>();
-		System.out.println("Enter the number of students details you want:");
-		int n=input.nextInt();
-		for(int i=1;i<=n;i++) {
-		StudentDetails stud=new StudentDetails();
-		System.out.println("Enter Student Name ");
-		stud.setName(input.next());
-		System.out.println("Enter Student Register Number ");
-		stud.setRegNo(input.nextInt());
-		System.out.println("Enter Student Age ");
-		stud.setAge(input.nextInt());
-		System.out.println("Enter Student Email Id ");
-		stud.setEmailId(input.next());
-		System.out.println("Enter Student Aadhar Number ");
-		stud.setAadharNo(input.nextLong());
-		student.add(stud);
-		System.out.println();
+		
+		boolean isExit=true;
+		
+		while(isExit) {
+			 System.out.println();
+			 System.out.println("****** Welcome to Login Page of Student Details ******");
+			 System.out.println();
+			 System.out.println("Enter a choice");
+			 System.out.println();
+			 System.out.println("1 for Adding Student's data to the arraylist");
+			 System.out.println("2 for Viewing Student Details ");
+			 System.out.println("3 for Inserting Student Info at the first position in the arraylist");
+			 System.out.println("4 for Removing third element from the Arraylist");
+			 System.out.println("5 for exit");
+			 System.out.println();
+			 byte choice=input.nextByte();
+			 switch(choice) {
+			 case 1:
+				 new StudentDataCollector().studentdatacollector();
+				 break;
+				
+			 case 2:
+				 new StudentDataViewer().studentdataviewer();
+				 break;
+				
+			 case 3:
+				 System.out.println("Inserting Student Info At First Position");
+				 new StudentDataCollector().insertinginfo();
+				 break;
+				 
+			 case 4:
+				 System.out.println("Removing third element from the Arraylist");
+				 break;
+				 
+			 case 5:
+				 System.out.println("    Thank You    ");
+				 isExit=false;
+				 break;
+			 default :
+				 System.out.println("Enter a valid choice");
+				 break;
+				
+			 }
+			 
 		}
-		for(StudentDetails studObj:student) {
-			System.out.println("Student Name " +studObj.getName());
-			System.out.println("Student Register Number " +studObj.getRegNo());
-			System.out.println("Student Age " +studObj.getAge());
-			System.out.println("Student Email Address " +studObj.getEmailId());
-			System.out.println("Student AadharNo "+studObj.getAadharNo());
-			System.out.println();
-			
-		}
-
 	}
-
+		
 }
