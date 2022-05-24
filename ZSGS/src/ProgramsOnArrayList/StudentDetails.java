@@ -10,7 +10,7 @@ public class StudentDetails{
 	public int getRegNo() {
 		return RegNo;
 	}
-	public void setRegNo (int Regno) {
+	public void setRegNo (int RegNo) {
 		this.RegNo=RegNo;
 	}
 	public String getName() {

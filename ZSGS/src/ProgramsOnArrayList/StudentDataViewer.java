@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class StudentDataViewer {
 
-	public void studentdataviewer() {
-		ArrayList<StudentDetails> student=new ArrayList<StudentDetails>();
+	public static void studentdataviewer(ArrayList<StudentDetails> student) {
+		
 		for(StudentDetails studObj: student) {
 			System.out.println("Student Name " +studObj.getName());
 			System.out.println("Student Register Number " +studObj.getRegNo());
