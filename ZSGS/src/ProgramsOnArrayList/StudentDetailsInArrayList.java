@@ -20,8 +20,8 @@ public class StudentDetailsInArrayList {
 			 System.out.println();
 			 System.out.println("1 for Adding Student's data to the arraylist");
 			 System.out.println("2 for Viewing Student Details ");
-			 System.out.println("3 for Inserting Student Info at the first position in the arraylist");
-			 System.out.println("4 for Removing third element from the Arraylist");
+			 System.out.println("3 for Inserting Student Info at the specific position in the arraylist");
+			 System.out.println("4 for Removing specific element from the Arraylist");
 			 System.out.println("5 for Sorting the arraylist using names");
 			 System.out.println("6 for Searching the arraylist using their roll numbers");
 			 System.out.println("7 for Copying one arraylist to another arraylist");
@@ -57,7 +57,7 @@ public class StudentDetailsInArrayList {
 				 
 			 case 4:
 				 System.out.println();
-				 System.out.println("Removing element from the Arraylist");
+				 System.out.println("Removing specific element from the Arraylist");
       			 students.removinginfo();
 				 break;
 			 case 5:

@@ -32,7 +32,6 @@ public class StudentDetails {
 	}
 	
 	public StudentDetails(long studentRollNo, String studentName, String emailID, long mobileNo) {
-		super();
 		StudentRollNo = studentRollNo;
 		StudentName = studentName;
 		EmailID = emailID;
