@@ -23,4 +23,35 @@ public class StackData {
 		
 	}
 
+
+	public void popdata() {
+		
+		if(stacks.size()==0) {
+			System.out.println("Stack is empty.Please add some elements to pop it out");
+		}
+		else {
+			Scanner input=new Scanner(System.in);
+			System.out.println("Enter the number of elements want to take out from Stack");
+			int n=input.nextInt();
+			if(n>stacks.size()) {
+				 System.out.println("You have chosen total no.of.elements is more than the stack size...");
+			}
+			else {
+				for(int i=0;i<n;i++) {
+					stacks.remove(stacks.size()-1);
+				}
+				System.out.println(stacks);
+			}
+		}
+	}
+		public void peekdata() {
+			if(stacks.size()==0) {
+				System.out.println("Stack is empty.Please add some elements to find peek");
+			}
+			else {
+				System.out.println("Peek element in Stack is"+stacks.get(stacks.size()-1));
+			}
+		
+		
+	}
 }

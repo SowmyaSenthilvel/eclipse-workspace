@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class StudentDataCollector {
-	 ArrayList<StudentDetails> student=new ArrayList<StudentDetails>();
+	ArrayList<StudentDetails> student=new ArrayList<StudentDetails>();
 	ArrayList<StudentDetails> student1=new ArrayList<StudentDetails>();
 	
 	
