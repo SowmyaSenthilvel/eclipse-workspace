@@ -1,12 +1,12 @@
 package AnonymousClass;
 
-class Cycle{
+class Cycle2{
 	void display() {
 		System.out.println("This is Cycle");
 	}
 }
 
-class TriCycle extends Cycle{
+class TriCycle extends Cycle2{
 	void display() {
 		System.out.println("This is TriCycle");
 		
@@ -15,7 +15,7 @@ class TriCycle extends Cycle{
 public class ExampleDemo {
 
 	public static void main(String[] args) {
-		Cycle c=new TriCycle();
+		Cycle2 c=new TriCycle();
 		c.display();
 
 	}
