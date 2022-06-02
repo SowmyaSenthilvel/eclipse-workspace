@@ -1,6 +1,6 @@
 import java.text.MessageFormat;
 
-public class StringBuilder {
+public class StringBuilder11 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

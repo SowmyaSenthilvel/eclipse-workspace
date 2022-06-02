@@ -16,6 +16,7 @@ class Student extends Member{
 		System.out.println("Hello Student");
 	}
 
+
 	@Override
 	void Hai() {
 		// TODO Auto-generated method stub
