@@ -8,7 +8,7 @@ public class TicTac{
 			for(int j=0;j<3;j++)
 				board[i][j] = 'Z';
 		Scanner sc = new Scanner(System.in);
-		int count = 1;
+		int count = 1; 
 		do{
 			if(count%2 == 1){
 			       System.out.println("Enter the turn for A");
