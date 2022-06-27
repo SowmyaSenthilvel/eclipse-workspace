@@ -8,6 +8,7 @@ public class StackBasicOperations {
 		Scanner input=new Scanner(System.in);
 		StackData stack=new StackData();
 		boolean End=true;
+		
 		while(End) {
 			System.out.println();
 			System.out.println("        BASIC OPERATIONS OF STACK DATA STRUCTURE        ");

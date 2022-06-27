@@ -14,7 +14,7 @@ public class ArrayListDemo {
 	//To add multiple elements to Arraylist
 	ArrayList<Integer> list=new ArrayList<Integer>(Arrays.asList(7,8,10,12,-9,8,45));
 	System.out.println(list);
-	//To add extra elements to the ezisting arraylist
+	//To add extra elements to the existing arraylist
 	Collections.addAll(list, 1,2,3);
 	System.out.println(list);
 	//To sort the existing elememts in the arraylist 

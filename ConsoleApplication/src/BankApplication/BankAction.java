@@ -45,7 +45,6 @@ public class BankAction{
 	}
 
 	public static void deposit(Account acc, long amount){
-
 		long bal = acc.getBalance() + amount;
 		acc.setBalance(bal);
 		Transaction trans = new Transaction(amount,Transaction.Status.SUCCESS,Transaction.Type.DEPOSIT,acc.getBalance());
@@ -86,6 +85,20 @@ public class BankAction{
 		for(Transaction t : acc.getStatement()){
 
 			System.out.println(t.getType()+" "+t.getAmount()+" "+t.getStatus()+" "+t.getCurrentBalance());
+		}
+	}
+	
+	public static void moneyTransfer(Account acc1,Account acc2,long amount) {
+		
+		if(acc1.getBalance()<amount) {
+			System.out.println("Money transfer is failure");
+			System.out.println("Account "+acc1.getAccountNumber()+" has lower balance than requested. Current Available balance is  "+acc1.getBalance());
+			
+		}
+		else {
+			withdraw(acc1, amount);
+			deposit(acc2, amount);
+			System.out.println("Money transfer is success");
 		}
 	}
 }

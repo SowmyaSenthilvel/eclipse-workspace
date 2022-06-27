@@ -19,7 +19,7 @@ class Student extends Member{
 
 	@Override
 	void Hai() {
-		// TODO Auto-generated method stub
+		System.out.println("it is abstract method");
 		
 	}
 	
@@ -33,9 +33,11 @@ class Teacher extends Member{
 
 	@Override
 	void Hai() {
-		// TODO Auto-generated method stub
+		System.out.println("It is a Abstract method");
 		
 	}
+
+	
 
 }	
 class HeadMaster extends Member{
@@ -48,6 +50,9 @@ class HeadMaster extends Member{
 	void Hai() {
 		// TODO Auto-generated method stub
 		
+	}
+	void bye() {
+		System.out.println("Its a non abstract method");
 	}
 }
 	
@@ -64,6 +69,8 @@ public class AbstractDemo {
 		m1.Welcome();
 		s1.Welcome();
 		t1.Welcome();
+		HeadMaster h=new HeadMaster();
+		h.bye();
 		Member[] mx=new Member[4];
 		mx[0]=new Student();
 		mx[1]=new Teacher();
