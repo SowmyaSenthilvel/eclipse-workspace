@@ -2,24 +2,22 @@ import java.util.*;
 
 public class Transaction {
 
-	public enum Type{
+	public enum Type {
 
-		DEPOSIT,
-		WITHDRAWAL
+		DEPOSIT, WITHDRAWAL
 	}
 
-	public enum Status{
-		SUCCESS,
-		FAILURE
+	public enum Status {
+
+		SUCCESS, FAILURE
 	}
 
 	private long amount;
 	private Type type;
 	private Status status;
-	private long currentBalance;	
-	
+	private long currentBalance;
 
-	public Transaction(long amount, Status status, Type type,long currentBalance){
+	public Transaction(long amount, Status status, Type type, long currentBalance) {
 
 		this.amount = amount;
 		this.status = status;
@@ -28,47 +26,45 @@ public class Transaction {
 
 	}
 
-	public void setAmount(long amount){
-	
+	public void setAmount(long amount) {
+
 		this.amount = amount;
 	}
-	public long getAmount(){
+
+	public long getAmount() {
 
 		return this.amount;
 	}
 
-	public void setType(Type type){
+	public void setType(Type type) {
 
 		this.type = type;
 	}
 
-	public Type getType(){
+	public Type getType() {
 
 		return this.type;
 
 	}
 
-	public void setStatus(Status status){
+	public void setStatus(Status status) {
 
 		this.status = status;
 	}
 
-	public Status getStatus(){
-		
+	public Status getStatus() {
+
 		return this.status;
 	}
 
-	public void setCurrentBalance(long balance){
+	public void setCurrentBalance(long balance) {
 
-         this.currentBalance = balance;
-        }
-	
-    public long getCurrentBalance(){
+		this.currentBalance = balance;
+	}
 
-           return this.currentBalance;
-        }
+	public long getCurrentBalance() {
 
-}
-
+		return this.currentBalance;
+	}
 
 }

@@ -84,10 +84,9 @@ public class MergeSortUsingArray{
 		sort(0,n-1);
 		System.out.println("After merge sort");
 		for(int i=0;i<n;i++){
-
-                        System.out.print(array[i]+" ");
-                }
-                System.out.print("\n");
+			System.out.print(array[i]+" ");
+        }
+        System.out.print("\n");
 
 	}
 

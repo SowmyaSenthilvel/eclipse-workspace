@@ -6,30 +6,35 @@ public class Temp {
 
 	public static void main(String[] args) {
 		Scanner input=new Scanner(System.in);
-		int arr[][]=new int[3][3];
+		System.out.println("Enter the length ");
+		int n=input.nextInt();
+		int arr[][]=new int[n][n];
 		System.out.println("Enter array elements");
-		for(int i=0;i<3;i++) {
-			for(int j=0;j<3;j++) {
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
 				arr[i][j]=input.nextInt();
 			}
 		}
-		for(int i=0;i<3;i++) {
-			for(int j=0;j<3;j++) {
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<n;j++) {
 				System.out.print(arr[i][j]+" ");
 			}
 			System.out.println();
 		}
 		int ans=arr[0][0];
-		for(int i=0;i<3;i++) {
+		int count=0;
+		for(int i=1;i<n;i++) {
 			if(arr[i][i]==ans) {
-				System.out.println("The diagonal elements are equal");
-				break;
-			}
-			else {
-				System.out.println("The diagonal element is not equal");
-				break;
-			}
 				
+				count++;
+			}	
+		}
+		if(count==n-1) {
+			System.out.println("The diagonal elements are equal");
+		}
+		else {
+			System.out.println("The diagonal element is not equal");
+			
 		}
 		
 	}

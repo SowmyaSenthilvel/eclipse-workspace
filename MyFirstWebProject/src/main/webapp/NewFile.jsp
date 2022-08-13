@@ -7,7 +7,7 @@
 <title>My first Web Project</title>
 </head>
 <body>
-<h1>Hi...Its me sowmya</h1>
+<h1>Hi...Its me</h1>
 <br>
 <p>Bye.....Take care!!!</p>
 

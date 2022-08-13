@@ -14,11 +14,13 @@ public class Account {
 	private long balance;
 	private Stack<Transaction> transactions;
 	private int pin;
+	private long mobile;
 
-	Account(String name, int age){
+	Account(String name, int age,long mobile){
 
 		this.name = name;
 		this.age = age;
+		this.mobile=mobile;
 		this.accountnumber = accno++;
 		this.balance = 0;
 		this.transactions = new Stack<Transaction>();
@@ -26,6 +28,15 @@ public class Account {
 		accounts.add(this);
 	}
 
+	Account(long accountnumber){
+
+		this.accountnumber = accountnumber;
+		this.balance = 0;
+		this.transactions = new Stack<Transaction>();
+		this.pin = 0;
+		accounts.add(this);
+	}
+	
 	public void setAccountNumber(long accnum){
 
 		this.accountnumber = accnum;
@@ -40,6 +51,14 @@ public class Account {
 	public void setName(String name){
 
 		this.name = name;
+	}
+
+	public long getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(long mobile) {
+		this.mobile = mobile;
 	}
 
 	public String getName(){
